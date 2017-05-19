@@ -2,8 +2,6 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const googleSheets = require('gsa-sheets');
 
-// TODO(you): Place your Google Service Account credentials file in
-// privateSettings.json. See HW5 spec for details. 
 const key = require('./privateSettings.json');
 
 // TODO(you): Change the value of this string to the spreadsheet id for your
@@ -58,5 +56,5 @@ async function onDelete(req, res) {
 app.delete('/api/:column/:value',  onDelete);
 
 app.listen(3000, function () {
-  console.log('Server listening on port 3000!')
+  console.log('Server listening on port 3000!');
 });
