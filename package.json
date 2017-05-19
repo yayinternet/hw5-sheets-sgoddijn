@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "CS193X HW5",
   "main": "server.js",
+  "engines": {
+    "node": "7x"
+  },
   "dependencies": {
     "body-parser": "^1.17.1",
     "express": "^4.15.2",
