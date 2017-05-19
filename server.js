@@ -55,6 +55,10 @@ async function onDelete(req, res) {
 }
 app.delete('/api/:column/:value',  onDelete);
 
-app.listen(3000, function () {
-  console.log('Server listening on port 3000!');
+
+// Please don't change this; this is needed to deploy on Heroku.
+const port = process.env.PORT || 3000;
+
+app.listen(port, function () {
+  console.log(`Server listening on port ${3000}!`);
 });
