@@ -1,0 +1,55 @@
+<!--
+You should NOT have to modify this file for the assignment!
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <title>Spreadsheet Tester</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script src="js/script.js" defer></script>
+    </script>
+
+  </head>
+
+  <body>
+    <section>
+      <h1>Spreadsheet test UI</h1>
+      <fieldset>
+        <form>
+          <p>
+            API Path: <input type="text" id="path-input" value="/api" />
+          </p>
+          <p>
+            Method:
+            <select id="method-input">
+              <option>GET</option>
+              <option>DELETE</option>
+              <option>POST</option>
+              <option>PATCH</option>
+            </select>
+          </p>
+          <p>
+            Body data: <button id="add-button">Add</button>
+            <div id="key-values"></div>
+          </p>
+          <p>
+            Request preview:<br/>
+            <pre id="preview-area" contenteditable readonly></pre>
+          </p>
+          <p>
+            <input type="submit" id="fetch-button" value="Fetch!"/>
+          </p>
+        </form>
+      </fieldset>
+      <section id="results-container" class="hidden">
+        <hr/>
+        <h2>Fetch results:</h2>
+        <pre id="results"></pre>
+      </section>
+    </section>
+  </body>
+</html>
